@@ -1,0 +1,192 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff; /* White */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff; /* White */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 85%;
+    max-width: 900px;
+}
+
+h1 {
+    text-align: center;
+    color: #daa520; /* Goldenrod (similar to yellow in the image) */
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.cita {
+    text-align: center;
+    font-style: italic;
+    color: #778899; /* LightSlateGray */
+    margin-bottom: 30px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ffefd5; /* PapayaWhip */
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 4px 10px rgba(255, 239, 213, 0.4); /* PapayaWhip with opacity */
+}
+
+section h2 {
+    color: #daa520; /* Goldenrod */
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #daa520;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    color: #696969; /* Dim Gray */
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #f0e68c; /* Khaki */
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #fff; /* White */
+    color: #444;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #daa520; /* Goldenrod */
+    outline: none;
+    box-shadow: 0 0 8px rgba(218, 165, 32, 0.3); /* Goldenrod with opacity */
+}
+
+select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23daa520' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+button {
+    background-color: #daa520; /* Goldenrod */
+    color: #fff; /* White */
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 0 10px;
+}
+
+button:hover {
+    background-color: #b8860b; /* DarkGoldenrod */
+    transform: scale(1.05);
+}
+
+button[type="reset"] {
+    background-color: #fffacd; /* LemonChiffon */
+    color: #696969; /* DimGray */
+}
+
+button[type="reset"]:hover {
+    background-color: #eee8aa; /* PaleGoldenrod */
+}
+
+#asesorSection{
+text-align: center;
+ color: #696969;
+font-size:1.2rem
+}
+
+/* Estilos específicos para las referencias */
+.referencia {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ffefd5; /* PapayaWhip */
+    border-radius: 6px;
+}
+
+.referencia h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.3em;
+    color: #daa520; /* Goldenrod */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    select,
+    textarea {
+        font-size: 15px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .button-container button {
+        margin: 10px 0;
+    }
+}
